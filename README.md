@@ -88,7 +88,7 @@
     public>index.html / 아래는 index.html  내용이다. body태그 안에 구성시키면 된다.
 <pre>
    <code>
-           <div id="root"></div>
+           <div id="appContainer"></div>
            <script src="bundle.js"></script>
    </code>
 </pre>
