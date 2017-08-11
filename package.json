@@ -1,0 +1,23 @@
+{
+  "name": "reactstudy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uxicode/reactstudy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uxicode/reactstudy/issues"
+  },
+  "homepage": "https://github.com/uxicode/reactstudy#readme",
+  "devDependencies": {
+    "webpack": "^3.5.3",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
