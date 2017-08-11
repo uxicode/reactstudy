@@ -86,12 +86,12 @@
     app>js>app.js
 
     public>index.html / 아래는 index.html  내용이다. body태그 안에 구성시키면 된다.
-    <pre>
-       <code>
-               <div id="root"></div>
-               <script src="bundle.js"></script>
-       </code>
-    </pre>
+<pre>
+   <code>
+           <div id="root"></div>
+           <script src="bundle.js"></script>
+   </code>
+</pre>
 4. npm install babel-core babel-loader babel-preset-es2015 babel-preset-react --save-dev
 5. npm install style-loader css-loader --save
 6. npm install react react-dom --save
