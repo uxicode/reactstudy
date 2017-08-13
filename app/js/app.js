@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
+import About from './About';
+import Home from './Home';
+import Repos from './Repos';
+import Styles from '../css/style.css'
 
 class App extends Component{
     constructor() {
@@ -17,11 +21,29 @@ class App extends Component{
         });
     }
     render(){
-         return(
-             <div>
-                 <h1>Hello React Router</h1>
-             </div>
-         )
+        let Child;
+        switch (this.state.route) {
+            case '/about' :
+                Child=About;
+                break;
+            case '/repos' :
+                Child=Repos;
+                break;
+            default:
+                Child=Home;
+        }
+        return (
+            <div>
+                <header>App</header>
+                <menu>
+                    <ul>
+                        <li><a href="#/about">About</a></li>
+                        <li><a href="#/repos">Repos</a></li>
+                    </ul>
+                </menu>
+                <Child />
+            </div>
+        );
     }
 }
 ReactDOM.render(<App />, document.getElementById('appContainer'));

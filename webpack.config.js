@@ -18,10 +18,10 @@ module.exports= {
         contentBase: './public',
         historyApiFallback: true,
         inline: true,
-        port: 8090
+        port: 8000
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.json']
+        extensions: ['.js', '.jsx', '.json', '.css']
     },
     module: {
         rules: [
@@ -46,8 +46,8 @@ module.exports= {
             /* css 로드 */
             {
                 test:/\.css$/,
-                use: ['style', 'css']
-                // loader:'style-loader!css-loader' // 이렇게 한줄로 해도 된다.
+                //use: ['style', 'css']
+                 loader:'style-loader!css-loader' // 이렇게 한줄로 해도 된다.
                 /* 
                  아래같은 방법도 있으나 [path]___[name]__[local]___[hash:base64:5] 설정 등으로
                  문자변환땜시 개발자 도구에서 알아 먹기 힘들다. 실제 빌드시에 적용하자.
