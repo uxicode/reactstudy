@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, Link, browserHistory } from 'react-router';
+import {Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
 import About from './About';
 import Home from './Home';
@@ -27,6 +27,7 @@ const RouteBasic=()=>{
     return(
         <Router history={browserHistory}>
             <Route path="/" component={Main}>
+                <IndexRoute component={Home}/>
                 <Route path="about" component={About} />
                 <Route path="repos" component={Repos} />
             </Route>

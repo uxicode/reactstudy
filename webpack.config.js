@@ -4,7 +4,7 @@ module.exports= {
     // 개발툴에서 소스 확인가능~
     devtool: '#inline-source-map',
     //개발 진입점 설정
-    entry: path.join( __dirname , '/app/js/app.js'),
+    entry: path.join( __dirname , '/app/js/RouteParams.js'),
     // 최종 산출 파일 설정.
     output: {
         // 산출 파일 경로
@@ -18,7 +18,7 @@ module.exports= {
         contentBase: './public',
         historyApiFallback: true,
         inline: true,
-        port: 8000
+        port: 8800
     },
     resolve: {
         extensions: ['.js', '.jsx', '.json', '.css']
